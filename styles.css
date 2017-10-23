@@ -1,0 +1,322 @@
+body,html{
+    height: 100%; /* Do we want to include a sticky footer? */
+    margin: 0; 
+    padding: 0;
+}
+
+html{
+    overflow-y: scroll; /* should prevent layout reposition on different pages based on presence of scrollbar */
+}
+
+.wrapper{
+    height: inherit;
+    width: 100%;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.clear{
+    clear: both;
+    display: block;
+}
+
+/******************/
+/* MOBILE STYLES */
+/*****************/
+
+/* HEADER AND MENU STYLES */
+
+.menuContain{
+    width: 100%;
+    margin: 0 auto;
+}
+
+header{
+    top: 0;
+    width: 100%;
+    background: #222;
+    height: 80px;
+    border-bottom: 3px solid #1A6A78;
+    position: relative;
+    z-index: 10;
+}
+
+.logo{
+    padding: 7px 0;
+    height: 65px;
+}
+
+/* MENU STYLES */
+
+/*#menuIcon{
+    width: 60px;
+    height: 45px;
+    position: relative;
+    margin: 50px auto;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out; 
+    cursor: pointer;  
+}
+
+.menuIconhmbg{
+    display: block;
+    position: absolute;
+    height: 9px;
+    width: 100%;
+    background: #1A6A78;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+.menuIconhmbg:nth-child(1) {
+    top: 0px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+
+.menuIconhmbg:nth-child(2) {
+    top: 18px;
+}
+
+.menuIconhmbg:nth-child(3) {
+    top: 36px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+
+#menuIcon.open .menuIconhmbg:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: -3px;
+    left: 8px;
+}
+
+#menuIcon.open .menuIconhmbg:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+}
+
+#menuIcon.open .menuIconhmbg:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 39px;
+    left: 8px;
+}
+*/
+
+
+/* MAIN VISUAL */
+
+#mainIMG{
+    height: 400px;
+}
+
+/* MAIN CONTENT */
+
+.mainContent{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.column{
+    width: calc(100% - 40px);
+  /*  max-height: 400px;*/
+    padding: 20px;
+}
+
+.sectionTitle{
+    font-size: 2.5em;
+    margin: 3% auto;
+    text-align: center;
+}
+
+/******************/
+/* DESKTOP STYLES */
+/*****************/
+
+/* MENU STYLES */ 
+@media only screen and (min-width: 701px){
+
+.menuContain{
+    width: 80%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+}
+
+li a, .sub-active{
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 31px 16px;
+    color: darkgray;
+}
+
+li.active a{
+    background-color: #1A6A78;
+    color: white;
+}
+
+li.active a:hover{
+    background-color: #1A6A78;
+    color: darkgray;
+}
+
+li a:hover, .sub:hover .sub-active{
+    background-color: #444;
+    color: white;	
+    -webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	-o-transition: all .5s ease;
+    transition: all 0.5s ease;
+}
+
+.sub.active:hover .sub-active{
+    background-color: #1A6A78;
+    color: darkgray;
+}
+    
+.sub.active:hover .subMenu a{
+    background-color: #f5f5f5;
+    color: darkgray;
+}
+    
+.sub.active:hover .subMenu a:hover{
+    background-color: #444;
+    color: white;
+}
+
+.subMenu{
+    display: none;
+    border-top: 3px solid #1A6A78;
+    position: absolute;
+    background-color: #f5f5f5;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.1);
+}
+
+.subMenu a{
+    padding: 12px 10px;
+    display: block;
+    text-align: left;
+}
+
+.sub:hover .subMenu{
+    display: block;
+}
+    
+/* MAIN VISUAL */
+    
+#mainIMG{
+    height: 90%;
+}
+    
+/* MAIN CONTENT */
+
+.mainContent{
+    width: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.column{
+    width: calc(50% - 40px);
+    padding: 20px;
+    border-bottom: 1px solid black;
+}
+    
+/*
+STYLES FOR INDIVIDUAL TEAM PAGES/DIVS WIP
+.teamContain{
+    height: inherit;
+    width: inherit;
+}
+    
+.teamFeatured{
+    border: 1px solid black;
+    height: 400px;
+    width: 350px;
+} */
+/******TEAMS******/
+#teams>li{
+	float:left;
+	list-style: none;
+	margin:0px 10px 0px 0px;
+}
+
+.column{
+	width:40%;
+	float:left;
+	margin:0px 5% 0px 5%;
+}
+
+#gallery{
+	width:100%;
+	display:flex;
+	display: -webkit-flex;
+	-webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-flex: 1/4;
+    flex: 1/4;
+    -webkit-align-content: center;
+    align-content: center;
+}
+
+#gallery>div{
+	width:30%;
+}
+/******END TEAMS******/
+	
+/******PARTNERS******/
+.partner_section {
+	width:40%;
+	height:100%;
+	float:left;
+	margin:0px 5% 0px 5%;
+}
+
+.partner_section>img{
+	width:50%;
+	display:block;
+	margin:20px auto;
+}
+/******END PARTNERS******/
+}
