@@ -159,6 +159,25 @@ header{
     text-align: center;
 }
 
+
+/*GALLERY*/
+#gallery{
+    width:100%;
+    margin:0 auto;
+}
+
+.gallery-item{
+    float:left;
+    width:48%;
+    margin:0px 1% 10px 1%;
+}
+
+.gallery-item>img{
+    width:100%;
+    margin: 0 auto;
+}
+/*END GALLERY*/
+
 /******************/
 /* DESKTOP STYLES */
 /*****************/
@@ -260,7 +279,6 @@ li a:hover, .sub:hover .sub-active{
 .column{
     width: calc(50% - 40px);
     padding: 20px;
-    border-bottom: 1px solid black;
 }
     
 /*
@@ -275,35 +293,31 @@ STYLES FOR INDIVIDUAL TEAM PAGES/DIVS WIP
     height: 400px;
     width: 350px;
 } */
-/******TEAMS******/
+/*TEAMS PAGE*/
 #teams>li{
 	float:left;
 	list-style: none;
 	margin:0px 10px 0px 0px;
 }
 
-.column{
-	width:40%;
-	float:left;
-	margin:0px 5% 0px 5%;
-}
+    /*GALLERY*/
+    #gallery{
+        width:80%;
+        margin:0 auto;
+    }
 
-#gallery{
-	width:100%;
-	display:flex;
-	display: -webkit-flex;
-	-webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-flex: 1/4;
-    flex: 1/4;
-    -webkit-align-content: center;
-    align-content: center;
-}
+    .gallery-item{
+        float:left;
+        width:30%;
+        margin:0px 1.66% 20px 1.66%;
+    }
 
-#gallery>div{
-	width:30%;
-}
-/******END TEAMS******/
+    .gallery-item>img{
+        width:100%;
+        margin: 0 auto;
+    }
+    /*END GALLERY*/
+/******END TEAMS PAGE******/
 	
 /******PARTNERS******/
 .partner_section {
