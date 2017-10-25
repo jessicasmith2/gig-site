@@ -260,7 +260,6 @@ li a:hover, .sub:hover .sub-active{
 .column{
     width: calc(50% - 40px);
     padding: 20px;
-    border-bottom: 1px solid black;
 }
     
 /*
@@ -282,11 +281,11 @@ STYLES FOR INDIVIDUAL TEAM PAGES/DIVS WIP
 	margin:0px 10px 0px 0px;
 }
 
-.column{
+/*.column{
 	width:40%;
 	float:left;
 	margin:0px 5% 0px 5%;
-}
+}*/
 
 #gallery{
 	width:100%;
