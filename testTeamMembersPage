@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<title>Providence Academy Journey Gig Site</title>
+		<link rel="stylesheet" type="text/css" href="styles2.css">
+		<link rel ="icon" type="image/png" href=""> <!-- favicon -->
+	</head>
+	<body>
+	<div class="wrapper">
+			<header>
+				<div class="menuContain">
+					<nav>
+						<a href="index.html"><img src="img/logo.png" alt="Providence Academy Journey logo" class="logo left"></a>
+						<!-- responsive menu icon -->
+						<div id="menuIcon">
+							<span class="menuIconhmbg"></span>
+							<span class="menuIconhmbg"></span>
+							<span class="menuIconhmbg"></span>
+						</div>
+						<!-- end responsive menu icon div -->
+						<ul class="right">
+							<li class="active left"><a href="index.html">Home</a></li>
+							<li class="sub left"><a href="teams.html" class="sub-active">Teams</a>
+								<div class="subMenu">
+									<a href="#">Content</a>
+									<a href="#">Design</a>
+									<a href="#">Marketing</a>
+									<a href="#">Web</a>
+								</div>
+							</li>
+							<li class="left"><a href="partners.html">Partners</a></li>
+						</ul>
+					</nav>
+				</div> <!-- end menuContain-->
+			</header>
+			<div class="mainContent ContentTeam">
+                <div class="column left">
+                    <div class="teamContain"> 
+						<h2 class="sectionTitle">Meet the Team</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quisquam culpa voluptatibus commodi, placeat iusto, maiores dolorum animi optio suscipit labore, fugiat recusandae hic! Laboriosam quod, reprehenderit iste officiis quidem.</p>
+						<div class="teamWrapper">
+                           <div class="teamMember left">
+                                <div class="teamPhotos"></div>
+                                    <button class="teamMemberBtn">Click for Info</button>
+                                    <div class="teamMemberDesc">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quisquam culpa voluptatibus commodi, placeat iusto, maiores dolorum animi optio suscipit labore, fugiat recusandae hic! Laboriosam quod, reprehenderit iste officiis quidem.</p>
+								    </div>
+                            </div> 
+                           <div class="teamMember left">
+                                <div class="teamPhotos"></div>
+                                    <button class="teamMemberBtn">Click for Info</button>
+                                    <div class="teamMemberDesc">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quisquam culpa voluptatibus commodi, placeat iusto, maiores dolorum animi optio suscipit labore, fugiat recusandae hic! Laboriosam quod, reprehenderit iste officiis quidem.</p>
+								    </div>
+                            </div> 
+                             <div class="teamMember left">
+                                <div class="teamPhotos"></div>
+                                    <button class="teamMemberBtn">Click for Info</button>
+                                    <div class="teamMemberDesc">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quisquam culpa voluptatibus commodi, placeat iusto, maiores dolorum animi optio suscipit labore, fugiat recusandae hic! Laboriosam quod, reprehenderit iste officiis quidem.</p>
+								    </div>
+                            </div> 
+                               <div class="teamMember left">
+                                <div class="teamPhotos"></div>
+                                    <button class="teamMemberBtn">Click for Info</button>
+                                    <div class="teamMemberDesc">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quisquam culpa voluptatibus commodi, placeat iusto, maiores dolorum animi optio suscipit labore, fugiat recusandae hic! Laboriosam quod, reprehenderit iste officiis quidem.</p>
+								    </div>
+                            </div>
+                            <div class="teamMember left">
+                                <div class="teamPhotos"></div>
+                                    <button class="teamMemberBtn">Click for Info</button>
+                                    <div class="teamMemberDesc">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quisquam culpa voluptatibus commodi, placeat iusto, maiores dolorum animi optio suscipit labore, fugiat recusandae hic! Laboriosam quod, reprehenderit iste officiis quidem.</p>
+								    </div>
+                            </div> 
+                              <div class="teamMember left">
+                                <div class="teamPhotos"></div>
+                                    <button class="teamMemberBtn">Click for Info</button>
+                                    <div class="teamMemberDesc">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quisquam culpa voluptatibus commodi, placeat iusto, maiores dolorum animi optio suscipit labore, fugiat recusandae hic! Laboriosam quod, reprehenderit iste officiis quidem.</p>
+								    </div>
+                            </div> 
+                            </div><!-- end teamMembers div -->
+                                <div class="teamMember left">
+                                <div class="teamPhotos"></div>
+                                    <button class="teamMemberBtn">Click for Info</button>
+                                    <div class="teamMemberDesc">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quisquam culpa voluptatibus commodi, placeat iusto, maiores dolorum animi optio suscipit labore, fugiat recusandae hic! Laboriosam quod, reprehenderit iste officiis quidem.</p>
+								    </div>
+                            </div> 
+                           <div class="teamMember left">
+                                <div class="teamPhotos"></div>
+                                    <button class="teamMemberBtn">Click for Info</button>
+                                    <div class="teamMemberDesc">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quisquam culpa voluptatibus commodi, placeat iusto, maiores dolorum animi optio suscipit labore, fugiat recusandae hic! Laboriosam quod, reprehenderit iste officiis quidem.</p>
+								    </div>
+                            </div> 
+                            <span class="clear"></span>
+                        </div> <!-- closes the teamWrapper div -->
+                </div> <!-- closes column -->
+				<div class="column left">
+				    <h2 class="sectionTitle">Team Gallery</h2>
+                    <div class="teamGallery">
+                        <div class="gallery-item">
+				            <img src="img/placeholder.png" alt="Gallery Image">
+                        </div>
+                        <div class="gallery-item">
+				            <img src="img/placeholder.png" alt="Gallery Image">
+                        </div>
+                        <div class="gallery-item">
+				            <img src="img/placeholder.png" alt="Gallery Image">
+                        </div>
+                        <div class="gallery-item">
+				            <img src="img/placeholder.png" alt="Gallery Image">
+                        </div>
+                        <div class="gallery-item">
+				            <img src="img/placeholder.png" alt="Gallery Image">
+                        </div>
+                        <div class="gallery-item">
+				            <img src="img/placeholder.png" alt="Gallery Image">
+                        </div>
+                        <span class="clear"></span> 
+                    </div>
+				</div>
+        </div> <!-- contentDev -->
+        <span class="clear"></span>
+    </div> <!-- end wrapper div -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var teamBio = document.getElementsByClassName("teamMemberBtn"); 
+            var toggleHeight;
+            for (var i = 0; i < teamBio.length; i++) {
+                teamBio[i].onclick = function() {
+                    this.classList.toggle("active");
+                    var addHeight = $(this).parent().height();
+                    console.log(addHeight);
+                    toggleHeight = addHeight + 200 + "px";
+                    console.log(toggleHeight);
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight){
+                        panel.style.maxHeight = null;
+                        $(this).parent().css("height", 0);
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                        $(this).parent().css("height", toggleHeight);
+                       toggleHeight = height + 90;
+                       addHeight.style.height = toggleHeight + "px";
+                    
+                    } 
+                }
+            }                
+        });
+    </script>
+	</body>
+</html>
