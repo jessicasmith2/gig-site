@@ -96,7 +96,12 @@ header{
 	font-size:2em;
 }
 
-ul {
+#mobileMenu>ul{
+	display:block;
+	color:white;
+}
+
+#menu {
     display: none;
 }
 
@@ -317,6 +322,10 @@ ul {
 .logo{
 	float:left;
 }
+	
+#menu {
+    display: block;
+}
     
 .menuIconContain{
     display: none;
@@ -326,7 +335,7 @@ nav>.menuIcon, #mobileMenu {
 	display:none;
 }
 
-ul{
+#teams, #menu{
     display: block;
     list-style-type: none;
     margin: 0;
@@ -475,6 +484,10 @@ li a:hover, .sub:hover .sub-active{
 .logo{
 	float:left;
 }
+	
+#menu {
+	display: block;
+}
 
 nav>.menuIcon, #mobileMenu {
 	display:none;
@@ -520,7 +533,11 @@ nav>.menuIcon, #mobileMenu {
 	float:left;
 }
 	
-/*MENU*/
+/*MENU*/	
+#menu {
+    display: block;
+}
+	
 nav>.menuIcon, #mobileMenu {
 	display:none;
 }
