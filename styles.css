@@ -51,13 +51,56 @@ header{
 .logo{
     padding: 7px 0;
     height: 65px;
+	display:block;
+	margin:0 auto;
+	float:none;
 }
 
 /* MENU STYLES */
+.menuIcon {
+	display:block;
+	position:absolute;
+	top:15px;
+	left:15px;
+	height:50px;
+	z-index:101;
+}
+
+#mobileMenu{
+	display:none;
+	position:fixed;
+	top:0px;
+	left:0px;
+	z-index:100;
+	height:100%;
+	width:100%;
+	margin:0 auto;
+	background: #222;
+	padding-top:110px;
+}
+
+.mobileMenuShow{ /*shows mobile menu*/
+	display:block !important;
+}
+
+.noScroll{ /*prevents scrolling while in mobile menu*/
+	overflow:hidden;
+}
+
+#mobileMenu>a{
+	display:inline-block;
+	width:100%;
+	color:white;
+	margin-left:20px;
+	margin-bottom:10px;
+	font-size:2em;
+}
 
 ul {
     display: none;
 }
+
+/*END MENU*/
 
 /*.menuIconcontain{
     display: block;}
@@ -270,9 +313,17 @@ ul {
 
 /* MENU STYLES */ 
 @media only screen and (min-width: 701px){
+
+.logo{
+	float:left;
+}
     
 .menuIconContain{
     display: none;
+}
+	
+nav>.menuIcon, #mobileMenu {
+	display:none;
 }
 
 ul{
@@ -420,6 +471,15 @@ li a:hover, .sub:hover .sub-active{
 
 
 @media only screen and (min-width: 1000px){
+/*HEADER*/
+.logo{
+	float:left;
+}
+
+nav>.menuIcon, #mobileMenu {
+	display:none;
+}
+	
         /*INDIVIDUAL TEAM PAGES*/
     .teamWrapper{        
         width: 100%;
@@ -455,7 +515,16 @@ li a:hover, .sub:hover .sub-active{
 
 
 @media only screen and (min-width: 1400px){
-    
+/*HEADER*/
+.logo{
+	float:left;
+}
+	
+/*MENU*/
+nav>.menuIcon, #mobileMenu {
+	display:none;
+}
+	
     /* INDIVIDUAL TEAM PAGE STYLES */
     
     .teamMember{
