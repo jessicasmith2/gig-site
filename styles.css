@@ -223,11 +223,25 @@ header{
     float:left;
     width:48%;
     margin:0px 1% 10px 1%;
+	position:relative;
+	padding:0px;
 }
 
 .gallery-item>img{
     width:100%;
     margin: 0 auto;
+}
+
+.hover-cover{
+	display:none;
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	width:100%;
+	font-size:0.8em;
+	height:auto;
+	color:white;
+	background: rgba(59,59,59,0.55);
 }
 /* END GALLERY */
 

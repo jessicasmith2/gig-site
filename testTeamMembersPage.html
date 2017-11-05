@@ -12,29 +12,40 @@
 	<body>
 	<div class="wrapper">
 			<header>
-				<div class="menuContain">
-					<nav>
-						<a href="index.html"><img src="img/logo.png" alt="Providence Academy Journey logo" id="logo"></a>
-						<!-- responsive menu icon -->
-						<div id="menuIcon">
-							<img src="images/" alt="menu icon">
+		<div class="menuContain">
+			<nav>
+				<a href="index.html"><img src="images/placeholder.png" alt="Providence Academy Journey logo" class="logo left"></a>
+				
+				<!-- mobile menu -->
+				<img class="menuIcon" src="images/MenuIcon4.png" alt="menu icon">
+				<div id="mobileMenu">
+					<img class="menuIcon" src="images/MenuIcon4.png" alt="menu icon">
+					<a href="#">HOME</a><br>
+					<a href="#">TEAMS</a><br>
+					<ul>
+						<li><a href="#">CONTENT</a></li>
+						<li><a href="#">DESIGN</a></li>
+						<li><a href="#">MARKETING</a></li>
+						<li><a href="#">WEB</a></li>
+					</ul>
+					<a href="#">PARTNERS</a><br>
+				</div>
+				
+				<ul id="menu" class="right">
+					<li class="left"><a href="index.html">Home</a></li>
+					<li class="active sub left"><a href="teams.html" class="sub-active">Teams</a>
+						<div class="subMenu">
+							<a href="#">Content</a>
+							<a href="#">Design</a>
+							<a href="#">Marketing</a>
+							<a href="#">Web</a>
 						</div>
-						<!-- end responsive menu icon div -->
-						<ul class="right">
-							<li class="active left"><a href="index.html">Home</a></li>
-							<li class="sub left"><a href="teams.html" class="sub-active">Teams</a>
-								<div class="subMenu">
-									<a href="#">Content</a>
-									<a href="#">Design</a>
-									<a href="#">Marketing</a>
-									<a href="#">Web</a>
-								</div>
-							</li>
-							<li class="left"><a href="partners.html">Partners</a></li>
-						</ul>
-					</nav>
-				</div> <!-- end menuContain-->
-			</header>
+					</li>
+					<li class="left"><a href="partners.html">Partners</a></li>
+				</ul>
+			</nav>
+		</div> <!-- end menuContain-->
+	</header>
 			<div class="mainContent ContentTeam">
                 <div class="column left">
                     <div class="teamContain"> 
@@ -103,27 +114,33 @@
                 </div> <!-- closes column -->
 				<div class="column left">
 				    <h2 class="sectionTitle">Team Gallery</h2>
-                    <div class="teamGallery">
-                        <div class="gallery-item">
-				            <img src="images/placeholder.png" alt="Gallery Image">
-                        </div>
-                        <div class="gallery-item">
-				            <img src="images/placeholder.png" alt="Gallery Image">
-                        </div>
-                        <div class="gallery-item">
-				            <img src="images/placeholder.png" alt="Gallery Image">
-                        </div>
-                        <div class="gallery-item">
-				            <img src="images/placeholder.png" alt="Gallery Image">
-                        </div>
-                        <div class="gallery-item">
-				            <img src="images/placeholder.png" alt="Gallery Image">
-                        </div>
-                        <div class="gallery-item">
-				            <img src="images/placeholder.png" alt="Gallery Image">
-                        </div>
-                        <span class="clear"></span> 
-                    </div>
+                    <div id="gallery">
+						<div class="gallery-item">
+							<img src="images/placeholder.png" alt="Gallery Image">
+							<p class="hover-cover"><strong>Item Title</strong><br>
+							Descripton</p>
+						</div>
+
+						<div class="gallery-item">
+							<img src="images/placeholder.png" alt="The Historic Trust Logo">
+						</div>
+
+						<div class="gallery-item">
+							<img src="images/placeholder.png" alt="The Historic Trust Logo">
+						</div>
+
+						<div class="gallery-item">
+							<img src="images/placeholder.png" alt="The Historic Trust Logo">
+						</div>
+
+						<div class="gallery-item">
+							<img src="images/placeholder.png" alt="The Historic Trust Logo">
+						</div>
+
+						<div class="gallery-item">
+							<img src="images/placeholder.png" alt="The Historic Trust Logo">
+						</div>
+					</div>
 				</div>
         </div> <!-- contentDev -->
         <span class="clear"></span>

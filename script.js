@@ -6,4 +6,9 @@ $(document).ready(function(){
 		$("#mobileMenu").toggleClass("mobileMenuShow");
 		$("body").toggleClass("noScroll");
 	});
+	
+	/*-----GALLERY FUNCTIONALITY-----*/
+	$(".gallery-item").hover(function() {
+		$(this).children(".hover-cover").slideToggle();
+	});
 });
