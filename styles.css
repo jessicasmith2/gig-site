@@ -212,6 +212,11 @@ header{
     text-align: center;
 }
 
+.teamPage>.left, .teamPage>.right{
+	float:none;
+	width:100%;
+}
+
 
 /* GALLERY */
 #gallery{
@@ -449,23 +454,23 @@ li a:hover, .sub:hover .sub-active{
 	margin:0px 10px 0px 0px;
 }
 
-    /* GALLERY */
-    #gallery{
-        width:80%;
-        margin:0 auto;
-    }
+/* GALLERY */
+#gallery{
+	width:80%;
+	margin:0 auto;
+}
 
-    .gallery-item{
-        float:left;
-        width:30%;
-        margin:0px 1.66% 20px 1.66%;
-    }
+.gallery-item{
+	float:left;
+	width:30%;
+	margin:0px 1.66% 20px 1.66%;
+}
 
-    .gallery-item>img{
-        width:100%;
-        margin: 0 auto;
-    }
-    /* END GALLERY */
+.gallery-item>img{
+	width:100%;
+	margin: 0 auto;
+}
+/* END GALLERY */
 
     /* END INDIVIDUAL TEAM PAGES */
     
