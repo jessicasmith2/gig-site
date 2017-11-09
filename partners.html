@@ -8,59 +8,308 @@
 	<title>Providence Academy Journey Gig Site</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link rel ="icon" type="image/png" href=""> <!-- favicon -->
+	<style>
+		  .teamCarousel{
+                position: relative;
+                width: 100%;
+                margin: 0 auto;
+            }
+            .teamCarousel, .teamContain, .teamMember, .teamMemDesc, .teamPrev{
+                transition: all 0.3s ease-in-out;
+            }
+            .teamContain{
+                position: relative;
+                display: block;
+                width: 100%;
+                min-width: 300px;
+                height: 160px;
+                margin-top: 15px;
+                background: #d1d1d1;
+            }
+            .teamMember{
+                display: block;
+                width: 130px;
+                height: 130px;
+                float: left;
+                margin: 12px 15px;
+                border-radius: 50%;
+            }
+            .teamMemDesc{
+                display: block;
+                transform: translateY(90%);
+                font-size: 1em;
+                line-height: 1.8em;
+                width: 150px;
+                height: 60px;
+                text-align: center;
+                color: black;
+                overflow: hidden;
+            }
+            .teamMemDesc h2{
+                margin: 5px 0;
+                padding: 0;
+                text-transform: uppercase;
+            }
+            .teamMemDesc a{
+                text-decoration: none;
+                color: #1A6A78;
+            }
+            .teamMemDesc p{
+                font-style: italic;
+                padding: 0;
+                margin: -5px 0;
+            }
+
+            @media only screen and (min-width: 670px) and (max-width: 849px){
+            .teamCarousel{
+                    width: 635px;
+                }
+            .teamContain{
+                    margin-left: 12px;
+                    width: 180px;
+                    height: 230px;
+                }    
+            .teamMember{
+                    display: block;
+                    float: none;
+                    width: 150px;
+                    height: 150px;
+                    margin: 12px auto;
+                }
+            .teamMemDesc{
+                    margin: -5px auto;
+                    height: 40px;
+                    width: 200px;
+                    transform: none;
+                }
+            .teamMemDesc h2{
+                margin: -2px 0;
+                padding: 0;
+                text-transform: uppercase;
+            }
+            .teamMemDesc a{
+                text-decoration: none;
+                color: #1A6A78;
+            }
+            .teamMemDesc p{
+                font-style: italic;
+                padding: 0;
+                margin: -5px 0;
+            }
+                
+            }
+
+            @media only screen and (min-width: 850px) and (max-width: 959px){
+            .teamCarousel{
+                width: 645px;
+            }
+            .teamContain{
+                position: relative;
+                display: block;
+                width: 250px;
+                margin-left: 15px;
+                margin-top: 15px;
+                background: #d1d1d1;
+            }
+            .teamMember{
+                display: block;
+                margin: 12px auto;
+                float: none;
+                width: 210px; 
+                height: 210px;
+                border-radius: 50%;
+            }
+            .teamMemDesc{
+                display: block;
+                transform: none;
+                margin: 0 auto;
+                font-size: 1em;
+                line-height: 1.8em;
+                width: 250px;
+                height: 60px;
+                text-align: center;
+                color: black;
+                overflow: hidden;
+            }
+                
+            .teamMemDesc h2{
+                margin: 5px 0;
+                padding: 0;
+                text-transform: uppercase;
+            }
+            .teamMemDesc a{
+                text-decoration: none;
+                color: #1A6A78;
+            }
+            .teamMemDesc p{
+                font-style: italic;
+                padding: 0;
+                margin: -5px 0;
+            }
+
+
+            }
+            
+            @media only screen and (min-width: 960px) and (max-width: 1400px){  
+            .teamCarousel{
+                width: 960px;
+            }
+            .teamContain{
+                position: relative;
+                display: block;
+                width: 250px;
+                height: 300px;
+                margin-left: 15px;
+                margin-top: 15px;
+                background: #d1d1d1;
+            }
+            .teamMember{
+                display: block;
+                margin: 12px auto;
+                float: none;
+                width: 210px; 
+                height: 210px;
+                border-radius: 50%;
+            }
+            .teamMemDesc{
+                display: block;
+                transform: none;
+                margin: 0 auto;
+                font-size: 1em;
+                line-height: 1.8em;
+                width: 250px;
+                height: 60px;
+                text-align: center;
+                color: black;
+                overflow: hidden;
+            }
+                
+            .teamMemDesc h2{
+                margin: 5px 0;
+                padding: 0;
+                text-transform: uppercase;
+            }
+            .teamMemDesc a{
+                text-decoration: none;
+                color: #1A6A78;
+            }
+            .teamMemDesc p{
+                font-style: italic;
+                padding: 0;
+                margin: -5px 0;
+            }
+                
+            }
+            @media only screen and (min-width: 1400px){
+            .teamCarousel{
+                max-width: 1275px;
+            }
+                
+            .teamContain{
+                position: relative;
+                display: block;
+                width: 250px;
+                height: 300px;
+                margin-left: 15px;
+                margin-top: 15px;
+                background: #d1d1d1;
+            }
+            .teamMember{
+                margin: 12px auto;
+                display: block;
+                width: 210px; 
+                height: 210px;
+                float: none;
+                border-radius: 50%;
+            }
+            .teamMemDesc{
+                display: block;
+                margin: 0 auto;
+                transform: none;
+                font-size: 1em;
+                line-height: 1.8em;
+                width: 250px;
+                height: 60px;
+                text-align: center;
+                color: black;
+                overflow: hidden;
+            }
+                
+            .teamMemDesc h2{
+                margin: 5px 0;
+                padding: 0;
+                text-transform: uppercase;
+            }
+            .teamMemDesc a{
+                text-decoration: none;
+                color: #1A6A78;
+            }
+            .teamMemDesc p{
+                font-style: italic;
+                padding: 0;
+                margin: -5px 0;
+            }
+            }
+	</style>
 </head>
 
 <body>
 <div id="wrapper">
-	<header>
-		<div class="menuContain">
-			<nav>
-				<a href="index.html"><img src="img/logo.png" alt="Providence Academy Journey logo" class="logo left"></a>
-				<!-- responsive menu icon -->
-				<div id="menuIcon">
-					<span class="menuIconhmbg"></span>
-					<span class="menuIconhmbg"></span>
-					<span class="menuIconhmbg"></span>
-				</div>
-				<!-- end responsive menu icon div -->
-				<ul class="right">
-					<li class="left"><a href="index.html">Home</a></li>
-					<li class="sub left"><a href="teams.html" class="sub-active">Teams</a>
-						<div class="subMenu">
-							<a href="#">Content</a>
-							<a href="#">Design</a>
-							<a href="#">Marketing</a>
-							<a href="#">Web</a>
-						</div>
-					</li>
-					<li class="active left"><a href="partners.html">Partners</a></li>
-				</ul>
-			</nav>
-		</div> <!-- end menuContain-->
-	</header>
-	
-	
-	
-	
 	<div class="mainContent">
 		<div class="column left">
 			<h2 class="sectionTitle">Creative Media &amp; Digital Culture</h2>
-			
-			<img src="placeholder.png" alt="CMDC Logo">
-
+			<div class="logoContain">
+				<img class="partnerLogo" src="placeholder.png" alt="CMDC Logo">
+			</div>
 			<a>Visit The CMDC</a>
-
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ullamcorper ultricies lectus, ut mattis urna sodales in. Suspendisse malesuada mauris non nulla aliquam cursus. Suspendisse laoreet iaculis metus at varius. Aliquam ut lectus vel orci euismod sollicitudin. Mauris sit amet massa tortor. Vestibulum cursus non magna at faucibus. Vestibulum augue ligula, pretium vel hendrerit ut, venenatis eget dolor.</p>
+			<div class="teamCarousel">
+            	<div class="left teamContain">
+                	<img class="teamMember" src="placeholder.png" alt="team member">
+                	<div class="teamMemDesc">
+                    	<h2><a href="">John Doe</a></h2>
+                    	<p>Role</p>
+                	</div>
+            	</div>
+            	<div class="left teamContain">
+                	<img class="teamMember" src="placeholder.png" alt="team member">
+                	<div class="teamMemDesc">
+                    	<h2><a href="">John Doe</a></h2>
+                    	<p>Role</p>
+                	</div>
+            	</div>
+            	<div class="left teamContain">
+                	<img class="teamMember" src="placeholder.png" alt="team member">
+                	<div class="teamMemDesc">
+                    	<h2><a href="">John Doe</a></h2>
+                    	<p>Role</p>
+                	</div>
+            	</div>
+            </div>
 		</div> <!-- close first column -->
-
 		<div class="column left">
 		<h2 class="sectionTitle">The Historic Trust</h2>
-
-			<img src="placeholder.png" alt="The Historic Trust Logo">
-
+			<div class="logoContain">
+				<img class="partnerLogo" src="placeholder.png" alt="The Historic Trust Logo">
+			</div>
 			<a>Visit The Historic Trust</a>
-
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ullamcorper ultricies lectus, ut mattis urna sodales in. Suspendisse malesuada mauris non nulla aliquam cursus. Suspendisse laoreet iaculis metus at varius. Aliquam ut lectus vel orci euismod sollicitudin. Mauris sit amet massa tortor. Vestibulum cursus non magna at faucibus. Vestibulum augue ligula, pretium vel hendrerit ut, venenatis eget dolor.</p>
+			<div class="teamCarousel">
+            	<div class="left teamContain">
+                	<img class="teamMember" src="placeholder.png" alt="team member">
+                	<div class="teamMemDesc">
+                    	<h2><a href="">John Doe</a></h2>
+                    	<p>Role</p>
+                	</div>
+            	</div>
+            	<div class="left teamContain">
+                	<img class="teamMember" src="placeholder.png" alt="team member">
+                	<div class="teamMemDesc">
+                    	<h2><a href="">John Doe</a></h2>
+                    	<p>Role</p>
+                	</div>
+            	</div>
+            </div>
 		</div>
 	</div> <!-- end main content -->
 </div> <!-- end wrapper -->
