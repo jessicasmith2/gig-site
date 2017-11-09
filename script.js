@@ -1,7 +1,9 @@
 $(document).ready(function(){
 	"use strict";
 	
-    $('#menuIcon').click(function(){
-		  $(this).toggleClass('open');
-    });
+	/*-----MENU-----*/
+	$(".menuIcon").click(function() {
+		$("#mobileMenu").toggleClass("mobileMenuShow");
+		$("body").toggleClass("noScroll");
+	});
 });

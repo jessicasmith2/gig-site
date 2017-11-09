@@ -1,17 +1,30 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="keywords" content="">
-	<meta name="description" content="">
-	<title>Providence Academy Journey Gig Site</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	<link rel ="icon" type="image/png" href=""> <!-- favicon -->
-	<style>
-		  .teamCarousel{
+
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+        <meta charset="utf-8">
+        <style>
+            body,html{
+                margin: 0;
+                padding: 0;
+                height: 100%;
+            }
+            .left{
+                float: left;
+            }
+            .clear{
+                clear: both;
+            }
+            .wrapper{
                 position: relative;
                 width: 100%;
+                height: inherit;
+                margin: 0 auto;
+            }
+            .teamCarousel{
+                position: relative;
+                width: 98%;
                 margin: 0 auto;
             }
             .teamCarousel, .teamContain, .teamMember, .teamMemDesc, .teamPrev{
@@ -59,10 +72,11 @@
                 padding: 0;
                 margin: -5px 0;
             }
-
+            
             @media only screen and (min-width: 670px) and (max-width: 849px){
             .teamCarousel{
                     width: 635px;
+                    height: 1000px;
                 }
             .teamContain{
                     margin-left: 12px;
@@ -102,11 +116,13 @@
             @media only screen and (min-width: 850px) and (max-width: 959px){
             .teamCarousel{
                 width: 645px;
+                height: 1275px;
             }
             .teamContain{
                 position: relative;
                 display: block;
                 width: 250px;
+                height: 300px;
                 margin-left: 15px;
                 margin-top: 15px;
                 background: #d1d1d1;
@@ -153,6 +169,7 @@
             @media only screen and (min-width: 960px) and (max-width: 1400px){  
             .teamCarousel{
                 width: 960px;
+                height: 960px;
             }
             .teamContain{
                 position: relative;
@@ -203,6 +220,7 @@
             @media only screen and (min-width: 1400px){
             .teamCarousel{
                 max-width: 1275px;
+                height: 650px;
             }
                 
             .teamContain{
@@ -250,68 +268,70 @@
                 margin: -5px 0;
             }
             }
-	</style>
-</head>
-
+        </style>
+    </head>
 <body>
-<div id="wrapper">
-	<div class="mainContent">
-		<div class="column left">
-			<h2 class="sectionTitle">Creative Media &amp; Digital Culture</h2>
-			<div class="logoContain">
-				<img class="partnerLogo" src="placeholder.png" alt="CMDC Logo">
-			</div>
-			<a>Visit The CMDC</a>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ullamcorper ultricies lectus, ut mattis urna sodales in. Suspendisse malesuada mauris non nulla aliquam cursus. Suspendisse laoreet iaculis metus at varius. Aliquam ut lectus vel orci euismod sollicitudin. Mauris sit amet massa tortor. Vestibulum cursus non magna at faucibus. Vestibulum augue ligula, pretium vel hendrerit ut, venenatis eget dolor.</p>
-			<div class="teamCarousel">
-            	<div class="left teamContain">
-                	<img class="teamMember" src="placeholder.png" alt="team member">
-                	<div class="teamMemDesc">
-                    	<h2><a href="">John Doe</a></h2>
-                    	<p>Role</p>
-                	</div>
-            	</div>
-            	<div class="left teamContain">
-                	<img class="teamMember" src="placeholder.png" alt="team member">
-                	<div class="teamMemDesc">
-                    	<h2><a href="">John Doe</a></h2>
-                    	<p>Role</p>
-                	</div>
-            	</div>
-            	<div class="left teamContain">
-                	<img class="teamMember" src="placeholder.png" alt="team member">
-                	<div class="teamMemDesc">
-                    	<h2><a href="">John Doe</a></h2>
-                    	<p>Role</p>
-                	</div>
-            	</div>
+    <div class="wrapper">
+        <div class="teamCarousel">
+            <div class="left teamContain">
+                <img class="teamMember" src="img/placeholder.png">
+                <div class="teamMemDesc">
+                    <h2><a href="">John Doe</a></h2>
+                    <p>Role</p>
+                </div>
             </div>
-		</div> <!-- close first column -->
-		<div class="column left">
-		<h2 class="sectionTitle">The Historic Trust</h2>
-			<div class="logoContain">
-				<img class="partnerLogo" src="placeholder.png" alt="The Historic Trust Logo">
-			</div>
-			<a>Visit The Historic Trust</a>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ullamcorper ultricies lectus, ut mattis urna sodales in. Suspendisse malesuada mauris non nulla aliquam cursus. Suspendisse laoreet iaculis metus at varius. Aliquam ut lectus vel orci euismod sollicitudin. Mauris sit amet massa tortor. Vestibulum cursus non magna at faucibus. Vestibulum augue ligula, pretium vel hendrerit ut, venenatis eget dolor.</p>
-			<div class="teamCarousel">
-            	<div class="left teamContain">
-                	<img class="teamMember" src="placeholder.png" alt="team member">
-                	<div class="teamMemDesc">
-                    	<h2><a href="">John Doe</a></h2>
-                    	<p>Role</p>
-                	</div>
-            	</div>
-            	<div class="left teamContain">
-                	<img class="teamMember" src="placeholder.png" alt="team member">
-                	<div class="teamMemDesc">
-                    	<h2><a href="">John Doe</a></h2>
-                    	<p>Role</p>
-                	</div>
-            	</div>
+            <div class="left teamContain">
+                <img class="teamMember" src="img/placeholder.png">
+                <div class="teamMemDesc">
+                    <h2><a href="">John Doe</a></h2>
+                    <p>Role</p>
+                </div>
             </div>
-		</div>
-	</div> <!-- end main content -->
-</div> <!-- end wrapper -->
+            <div class="left teamContain">
+                <img class="teamMember" src="img/placeholder.png">
+                <div class="teamMemDesc">
+                    <h2><a href="">John Doe</a></h2>
+                    <p>Role</p>
+                </div>
+            </div>
+            <div class="left teamContain">
+                <img class="teamMember" src="img/placeholder.png">
+                <div class="teamMemDesc">
+                    <h2><a href="">John Doe</a></h2>
+                    <p>Role</p>
+                </div>
+            </div>
+            <div class="left teamContain">
+                <img class="teamMember" src="img/placeholder.png">
+                <div class="teamMemDesc">
+                    <h2><a href="">John Doe</a></h2>
+                    <p>Role</p>
+                </div>
+            </div>
+            <div class="left teamContain">
+                <img class="teamMember" src="img/placeholder.png">
+                <div class="teamMemDesc">
+                    <h2><a href="">John Doe</a></h2>
+                    <p>Role</p>
+                </div>
+            </div>
+            <div class="left teamContain">
+                <img class="teamMember" src="img/placeholder.png">
+                <div class="teamMemDesc">
+                    <h2><a href="">John Doe</a></h2>
+                    <p>Role</p>
+                </div>
+            </div>
+            <div class="left teamContain">
+                <img class="teamMember" src="img/placeholder.png">
+                <div class="teamMemDesc">
+                    <h2><a href="">John Doe</a></h2>
+                    <p>Role</p>
+                </div>
+            </div>
+            <span class="clear"></span>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </body>
 </html>
