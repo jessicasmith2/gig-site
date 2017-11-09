@@ -31,10 +31,8 @@ html{
 /*****************/
 
 /* HEADER AND MENU STYLES */
-
 .menuContain{
-    width: 80%;
-    max-width: 1400px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -51,140 +49,9 @@ header{
 .logo{
     padding: 7px 0;
     height: 65px;
-	display:block;
-	margin:0 auto;
-	float:none;
 }
-
-/* MENU STYLES */
-.menuIcon {
-	display:block;
-	position:absolute;
-	top:15px;
-	left:15px;
-	height:50px;
-	z-index:101;
-}
-
-#mobileMenu{
-	display:none;
-	position:fixed;
-	top:0px;
-	left:0px;
-	z-index:100;
-	height:100%;
-	width:100%;
-	margin:0 auto;
-	background: #222;
-	padding-top:110px;
-}
-
-.mobileMenuShow{ /*shows mobile menu*/
-	display:block !important;
-}
-
-.noScroll{ /*prevents scrolling while in mobile menu*/
-	overflow:hidden;
-}
-
-#mobileMenu>a{
-	display:inline-block;
-	width:100%;
-	color:white;
-	margin-left:20px;
-	margin-bottom:10px;
-	font-size:2em;
-}
-
-ul {
-    display: none;
-}
-
-/*END MENU*/
-
-/*.menuIconcontain{
-    display: block;}
-
-.menuIcon{
-    width: 60px;
-    height: 30px;
-    position: relative;
-    margin: 15px;
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-    -webkit-transition: .25s ease-in-out;
-    -moz-transition: .25s ease-in-out;
-    -o-transition: .25s ease-in-out;
-    transition: .25s ease-in-out; 
-    cursor: pointer;  
-}
-
-.menuIconhmbg{
-    display: block;
-    position: absolute;
-    height: 9px;
-    width: 100%;
-    background: #1A6A78;
-    border-radius: 9px;
-    opacity: 1;
-    left: 0;
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-    -webkit-transition: .25s ease-in-out;
-    -moz-transition: .25s ease-in-out;
-    -o-transition: .25s ease-in-out;
-    transition: .25s ease-in-out;
-}
-
-.menuIconhmbg:nth-child(1) {
-    top: 0px;
-    -webkit-transform-origin: left center;
-    -moz-transform-origin: left center;
-    -o-transform-origin: left center;
-    transform-origin: left center;
-}
-
-.menuIconhmbg:nth-child(2) {
-    top: 18px;
-}
-
-.menuIconhmbg:nth-child(3) {
-    top: 36px;
-    -webkit-transform-origin: left center;
-    -moz-transform-origin: left center;
-    -o-transform-origin: left center;
-    transform-origin: left center;
-}
-
-.menuIcon.open .menuIconhmbg:nth-child(1) {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-    top: -3px;
-    left: 8px;
-}
-
-.menuIcon.open .menuIconhmbg:nth-child(2) {
-    width: 0%;
-    opacity: 0;
-}
-
-.menuIcon.open .menuIconhmbg:nth-child(3) {
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    top: 39px;
-    left: 8px;
-}*/
-
-
 /* MAIN VISUAL */
+
 #mainIMG{
     height: 400px;
 }
@@ -197,7 +64,6 @@ ul {
 
 .column{
     width: calc(100% - 40px);
-    max-width: 750px;
     padding: 20px;
 }
 
@@ -207,8 +73,18 @@ ul {
     text-align: center;
 }
 
+.logoContain{
+    width: 200px;
+    height: 150px;
+    margin:0 auto;
+}
 
-/* GALLERY */
+.partnerLogo{
+    width: inherit;
+    height: inherit;
+}
+
+/*GALLERY*/
 #gallery{
     width:100%;
     margin:0 auto;
@@ -224,110 +100,37 @@ ul {
     width:100%;
     margin: 0 auto;
 }
-/* END GALLERY */
-
-/* INDIVIDUAL TEAM PAGES STYLES */
-
-.teamGallery{
-    width: 100%;
-    margin: 0 auto;
-}
-
-.teamWrapper{        
-    width: 100%;
-    min-width: 350px;
-    max-width: 500px;
-    margin: 20px auto;
-}
-
-  .teamMember{
-        width: calc(100% - 40px);
-        height: 0;
-        padding-bottom: calc(95% - 40px);
-        position: relative;
-        margin: 10px 10px;
-        transition: .2s ease-out;
-}
-
-    .teamPhotos{
-        margin: 0 auto;
-        background-color: #222;
-        height: 0;
-        width: 80%;
-        padding-bottom: 85%;
-        border-radius: 50%;
-        
-    }
-
-    #firstImg{
-        background-image: url(https://static.pexels.com/photos/60597/dahlia-red-blossom-bloom-60597.jpeg);
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-    }
-
-    #fifthImg{
-        background-image: url(http://en.bcdn.biz/Images/2016/7/11/c86de5a5-2107-4382-a98c-184ebf681497.jpg);
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-    }
-    
-    .teamMemberBtn{
-        position: relative;
-        top: 1em;
-        width: 100%;
-        height: 25px;
-        background-color: #E7E1D8;
-        cursor: pointer;
-        text-align: center;
-        border: none;
-    }
-
-    .teamMember:hover .teamMemberBtn, .teamMemberBtn.active {
-        background-color: black;
-        color: white;
-    }
-
-    .teamMemberBtn:after{
-        content: '\25BC';
-        float: right;
-        margin-right: 5px;
-        font-weight: bold;
-    }
-
-    .teamMemberBtn.active:after{
-        content: '\25B2';
-    }
-
-    .teamMemberDesc{
-        overflow: hidden;
-        max-height: 0;
-        text-align: left;
-        background-color: white;
-        transition: max-height 0.2s ease-out;
-        padding: 0 18px;
-    }
+/*END GALLERY*/
 
 /******************/
 /* DESKTOP STYLES */
 /*****************/
 
-/* MENU STYLES */ 
-@media only screen and (min-width: 701px){
+@media only screen and (min-width: 700px) and (max-width:1199px){
+.mainContent{
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
 
-.logo{
-	float:left;
+.column{
+    width: calc(80% - 40px);
+    padding: 20px;
+    margin: 0 auto;
 }
-    
-.menuIconContain{
-    display: none;
+
 }
-	
-nav>.menuIcon, #mobileMenu {
-	display:none;
+
+/* MENU STYLES */ 
+@media only screen and (min-width: 1200px){
+
+.menuContain{
+    width: 80%;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 ul{
-    display: block;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -398,14 +201,12 @@ li a:hover, .sub:hover .sub-active{
     display: block;
 }
     
-/* MAIN VISUAL */
-    
+/* MAIN VISUAL */  
 #mainIMG{
     height: 90%;
 }
     
 /* MAIN CONTENT */
-
 .mainContent{
     width: 100%;
     max-width: 1800px;
@@ -413,20 +214,18 @@ li a:hover, .sub:hover .sub-active{
 }
 
 .column{
+    float: left;
     width: calc(50% - 40px);
-    max-width: 100%;
     padding: 20px;
 }
-    
-
-/* TEAMS PAGE */
+/*TEAMS PAGE*/
 #teams>li{
 	float:left;
 	list-style: none;
 	margin:0px 10px 0px 0px;
 }
 
-    /* GALLERY */
+    /*GALLERY*/
     #gallery{
         width:80%;
         margin:0 auto;
@@ -442,16 +241,10 @@ li a:hover, .sub:hover .sub-active{
         width:100%;
         margin: 0 auto;
     }
-    /* END GALLERY */
-
-    /* END INDIVIDUAL TEAM PAGES */
-    
-    /* INDIVIDUAL TEAM GALLERIES */
-    
+    /*END GALLERY*/
 /******END TEAMS PAGE******/
 	
 /******PARTNERS******/
-    
 .partner_section {
 	width:40%;
 	height:100%;
@@ -464,88 +257,5 @@ li a:hover, .sub:hover .sub-active{
 	display:block;
 	margin:20px auto;
 }
-    
 /******END PARTNERS******/
-
-}
-
-
-@media only screen and (min-width: 1000px){
-/*HEADER*/
-.logo{
-	float:left;
-}
-
-nav>.menuIcon, #mobileMenu {
-	display:none;
-}
-	
-        /*INDIVIDUAL TEAM PAGES*/
-    .teamWrapper{        
-        width: 100%;
-        max-width: 100%;
-        margin: 20px auto;
-    }
-    
-    .teamMember{
-        width: calc(50% - 40px);
-        height: 0;
-        padding-bottom: calc(51% - 40px);
-        position: relative;
-        margin: 10px 10px;    }
-
-    .teamPhotos{
-        margin: 0 auto;
-        background-color: #222;
-        height: 0;
-        width: 90%;
-        padding-bottom: 86%;
-        border-radius: 50%;
-    }
-
-    #firstImg{
-        background-image: url(https://static.pexels.com/photos/60597/dahlia-red-blossom-bloom-60597.jpeg);
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-    }
-
-    /* END INDIVIDUAL TEAM PAGES */
-    
-}
-
-
-@media only screen and (min-width: 1400px){
-/*HEADER*/
-.logo{
-	float:left;
-}
-	
-/*MENU*/
-nav>.menuIcon, #mobileMenu {
-	display:none;
-}
-	
-    /* INDIVIDUAL TEAM PAGE STYLES */
-    
-    .teamMember{
-        width: calc(33% - 20px);
-        height: 0;
-        padding-bottom: calc(39% - 20px);
-        margin: 0 10px;    
-    }
-
-    .teamPhotos{
-        margin: 0px auto;
-        margin-top: 5px;
-        background-color: #222;
-        height: 0;
-        width: 100%;
-        padding-bottom: 102%;
-        border-radius: 50%;
-    }
-
-    /* END INDIVIDUAL TEAM PAGES */
-    
-    /* INDIVIDUAL TEAM GALLERIES */
-    
 }
