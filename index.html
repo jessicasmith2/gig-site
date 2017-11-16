@@ -6,55 +6,78 @@
 	<meta name="keywords" content="">
 	<meta name="description" content="">
 	<title>Providence Academy Journey Gig Site</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	<link rel ="icon" type="image/png" href=""> <!-- favicon -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel ="icon" type="image/png" href=""> <!-- favicon -->
 </head>
 	
 <body>
 	<div class="wrapper">
-		<header>
-			<div class="menuContain">
-				<nav>
-					<a href="index.html"><img src="img/logo.png" alt="Providence Academy Journey logo" class="logo left"></a>
-					<!-- responsive menu icon -->
-					<div id="menuIcon">
-						<span class="menuIconhmbg"></span>
-						<span class="menuIconhmbg"></span>
-						<span class="menuIconhmbg"></span>
-					</div>
-					<!-- end responsive menu icon div -->
-					<ul class="right">
-						<li class="active left"><a href="index.html">Home</a></li>
-						<li class="sub left"><a href="teams.html" class="sub-active">Teams</a>
-							<div class="subMenu">
-								<a href="#">Content</a>
-								<a href="#">Design</a>
-								<a href="#">Marketing</a>
-								<a href="#">Web</a>
-							</div>
-						</li>
-						<li class="left"><a href="partners.html">Partners</a></li>
-					</ul>
-				</nav>
-			</div> <!-- end menuContain-->
-		</header>
+        <header>
+            <div class="menuContain">
+                <nav>
+                    <a href="index.html"><img src="img/placeholder.png" alt="Providence Academy Journey logo" class="logo left"></a>
+                    <!-- mobile menu -->
+                        <img class="menuIcon" src="img/MenuIcon4.png" alt="menu icon">
+                        <div id="mobileMenu">
+                            <img class="menuIcon" src="img/MenuIcon4.png" alt="menu icon">
+                            <a href="index.html">HOME</a><br>
+                            <a href="teams.html">TEAMS</a><br>
+                            <ul>
+                                <li><a href="contentteam.html">CONTENT</a></li>
+                                <li><a href="designteam.html">DESIGN</a></li>
+                                <li><a href="marketingteam.html">MARKETING</a></li>
+                                <li><a href="webteam.html">WEB</a></li>
+                            </ul>
+                            <a href="partners.html">PARTNERS</a><br>
+                        </div>
+				    <ul id="menu" class="right">
+                        <li class="active left"><a href="index.html">Home</a></li>
+                        <li class="sub left"><a href="teams.html" class="sub-active">Teams</a>
+                            <div class="subMenu">
+                                <a href="contentteam.html">Content</a>
+                                <a href="designteam.html">Design</a>
+                                <a href="marketingteam.html">Marketing</a>
+                                <a href="webteam.html">Web</a>
+                            </div>
+                        </li>
+                        <li class="left"><a href="partners.html">Partners</a></li>
+				    </ul>
+                </nav>
+            </div> <!-- end menuContain-->
+	   </header>
 	  <div id="mainIMG"></div>
 		<div class="mainContent">
-			<div class="column left">
-					<h2 class="sectionTitle">About</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quisquam culpa voluptatibus commodi, placeat iusto, maiores dolorum animi optio suscipit labore, fugiat recusandae hic! Laboriosam quod, reprehenderit iste officiis quidem.</p>
+			<div class="column">
+                    <h1 class="sectionTitle">About</h1>
+					<p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quisquam culpa voluptatibus commodi, placeat iusto, maiores dolorum animi optio suscipit labore, fugiat recusandae hic! Laboriosam quod, reprehenderit iste officiis quidem.</p>
+                    <div class="externalLinks">
+                        <ul id="appLinks">
+                            <li>App Download</li>
+                            <li>App Website</li>
+                        </ul>
+                    </div>
 			</div>
-			<div class="column left">
-					<h2 class="sectionTitle">Explore</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quisquam culpa voluptatibus commodi, placeat iusto, maiores dolorum animi optio suscipit labore, fugiat recusandae hic! Laboriosam quod, reprehenderit iste officiis quidem.</p>
-				<div id="trailerPlay"></div>
-				<div id="externalLinks"></div>
+			<div class="column">
+					<h1 class="sectionTitle">Explore</h1>
+					<p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quisquam culpa voluptatibus commodi, placeat iusto, maiores dolorum animi optio suscipit labore, fugiat recusandae hic! Laboriosam quod, reprehenderit iste officiis quidem.</p>
+				    <div id="trailerPlay">Play Trailer</div>
 			</div>
 			<span class="clear"></span>
 		</div> <!-- closes mainContent div -->
 		<!-- END 02 -->
 	</div> <!-- closes wrapper div -->
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	<script src="script.js"></script>
+	<script>
+        $(document).ready(function(){
+        "use strict";
+    
+        /*-----MENU-----*/
+        $(".menuIcon").click(function() {
+            $("#mobileMenu").toggleClass("mobileMenuShow");
+            $("body").toggleClass("noScroll");
+        });
+    });
+
+    </script>
 </body>
 </html>
