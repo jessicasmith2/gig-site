@@ -1,41 +1,39 @@
+/******************/
+/* GENERAL STYLES */
+/*****************/
+
 body,html{
     height: 100%; /* Do we want to include a sticky footer? */
-    margin: 0; 
+    margin: 0;
     padding: 0;
 }
-
 html{
-    overflow-y: scroll; /* should prevent layout reposition on different pages based on presence of scrollbar */
+    overflow-y: scroll; 
 }
-
 .wrapper{
     height: inherit;
     width: 100%;
 }
-
 .left{
     float: left;
 }
-
 .right{
     float: right;
 }
-
 .clear{
     clear: both;
     display: block;
 }
-
 /******************/
 /* MOBILE STYLES */
 /*****************/
 
-/* HEADER AND MENU STYLES */
+/*   MENU    */
 .menuContain{
-    width: 100%;
+    width: 90%;
+    max-width: 1000px;
     margin: 0 auto;
 }
-
 header{
     top: 0;
     width: 100%;
@@ -45,33 +43,182 @@ header{
     position: relative;
     z-index: 10;
 }
-
 .logo{
     padding: 7px 0;
     height: 65px;
+	display: block;
+	margin: 0 auto;
+	float: none;
 }
-/* MAIN VISUAL */
+.menuIcon {
+	display: block;
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	height: 50px;
+	z-index: 101;
+}
+#mobileMenu{
+	display: none;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 100;
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+	background: #222;
+	padding-top: 110px;
+}
+.mobileMenuShow{ /*shows mobile menu*/
+	display:block !important;
+}
+.noScroll{ /*prevents scrolling while in mobile menu*/
+	overflow:hidden;
+}
+#mobileMenu>a{
+	display:inline-block;
+	width: 100%;
+	color: white;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	font-size: 2em;
+}
+#mobileMenu>ul{
+	display: block;
+	color: white;
+}
+#menu {
+    display: none;
+}
+
+#teams>li{
+	float:left;
+	list-style: none;
+	margin:0px 10px 0px 0px;
+}
+
+/*   MAIN   */
 
 #mainIMG{
     height: 400px;
 }
 
-/* MAIN CONTENT */
 .mainContent{
     width: 100%;
     margin: 0 auto;
 }
-
 .column{
-    width: calc(100% - 40px);
-    padding: 20px;
+    position: relative;
+    width: calc(100% - 20px);
+    padding: 10px;
+    float: left;
 }
-
-.sectionTitle{
-    font-size: 2.5em;
-    margin: 3% auto;
+.column p{
+    font-size: 1.1em;
+}
+.column h2{
     text-align: center;
 }
+.sectionTitle{
+    font-size: 2em;
+    text-align: center;
+}
+.externalLinks > ul{
+    list-style-type: none;
+}
+.externalLinks {
+}
+
+/* TEAMS */
+
+#pageLinks{
+    border: 1px solid black;
+    margin: 0 auto;
+    width: 80%;
+}
+.teamCarousel{
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+.teamContain{
+    margin-top: 5px;
+    position: relative;
+    display: inline-block;
+    min-width: 300px;
+    width: 100%;
+    height: 160px;
+    background: #d1d1d1;
+}
+.teamMember{
+    display: block;
+    width: 140px;
+    height: 140px;
+    float: left;
+    margin: 10px 10px;
+    border-radius: 50%;
+}
+.teamMemDesc{
+    display: block;
+    transform: translateY(90%);
+    font-size: 1em;
+    line-height: 1.8em;
+    width: 130px;
+    height: 60px;
+    text-align: center;
+    color: black;
+    overflow: hidden;
+}
+.teamMemDesc h2{
+    margin: 5px 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+.teamMemDesc a{
+    text-decoration: none;
+    color: #1A6A78;
+}
+.teamMemDesc p{
+    font-style: italic;
+    padding: 0;
+    margin: -5px 0;
+}
+
+/* GALLERY */
+
+#gallery{
+    width:100%;
+    margin:0 auto;
+}
+
+.gallery-item{
+    float:left;
+    width:48%;
+    margin:0px 1% 10px 1%;
+	position:relative;
+	padding:0px;
+}
+
+.gallery-item>img{
+    width:100%;
+    margin: 0 auto;
+}
+
+.hover-cover{
+	display:none;
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	width:100%;
+	font-size:0.8em;
+	height:auto;
+	color:white;
+	background: rgba(59,59,59,0.55);
+}
+/* END GALLERY */
+
+/* PARTNERS */
 
 .logoContain{
     width: 200px;
@@ -84,61 +231,35 @@ header{
     height: inherit;
 }
 
-/*GALLERY*/
-#gallery{
-    width:100%;
-    margin:0 auto;
+/***********************************/
+/* TABLET AND SMALL DESKTOP STLYES */
+/***********************************/
+
+@media only screen and (min-width: 600px) /*and (max-width: 1249px)*/{
+    
+/*   MENU   */
+    
+.logo{
+	float:left;
+}	
+#menu {
+    display: block;
+}   
+.menuIconContain{
+    display: none;
 }
-
-.gallery-item{
-    float:left;
-    width:48%;
-    margin:0px 1% 10px 1%;
+nav>.menuIcon, #mobileMenu {
+	display:none;
 }
-
-.gallery-item>img{
-    width:100%;
-    margin: 0 auto;
-}
-/*END GALLERY*/
-
-/******************/
-/* DESKTOP STYLES */
-/*****************/
-
-@media only screen and (min-width: 700px) and (max-width:1199px){
-.mainContent{
-    width: 100%;
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-.column{
-    width: calc(80% - 40px);
-    padding: 20px;
-    margin: 0 auto;
-}
-
-}
-
-/* MENU STYLES */ 
-@media only screen and (min-width: 1200px){
-
-.menuContain{
-    width: 80%;
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
-ul{
+#teams, #menu{
+    display: block;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     float: right;
 }
-
-li a, .sub-active{
+nav li a, .sub-active{
     display: inline-block;
     vertical-align: middle;
     text-align: center;
@@ -147,18 +268,15 @@ li a, .sub-active{
     padding: 31px 16px;
     color: darkgray;
 }
-
-li.active a{
+nav li.active a{
     background-color: #1A6A78;
     color: white;
 }
-
-li.active a:hover{
+nav li.active a:hover{
     background-color: #1A6A78;
     color: darkgray;
 }
-
-li a:hover, .sub:hover .sub-active{
+nav li a:hover, .sub:hover .sub-active{
     background-color: #444;
     color: white;	
     -webkit-transition: all .5s ease;
@@ -167,95 +285,129 @@ li a:hover, .sub:hover .sub-active{
 	-o-transition: all .5s ease;
     transition: all 0.5s ease;
 }
-
-.sub.active:hover .sub-active{
+nav .sub.active:hover .sub-active{
     background-color: #1A6A78;
     color: darkgray;
-}
-    
-.sub.active:hover .subMenu a{
+}   
+nav .sub.active:hover .subMenu a{
     background-color: #f5f5f5;
     color: darkgray;
-}
-    
-.sub.active:hover .subMenu a:hover{
+}   
+nav .sub.active:hover .subMenu a:hover{
     background-color: #444;
     color: white;
 }
-
-.subMenu{
+nav .subMenu{
     display: none;
     border-top: 3px solid #1A6A78;
     position: absolute;
     background-color: #f5f5f5;
     box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.1);
 }
-
-.subMenu a{
+nav .subMenu a{
     padding: 12px 10px;
     display: block;
     text-align: left;
 }
-
-.sub:hover .subMenu{
+nav .sub:hover .subMenu{
     display: block;
 }
     
-/* MAIN VISUAL */  
-#mainIMG{
-    height: 90%;
-}
+/*   MAIN   */
     
-/* MAIN CONTENT */
+.sectionTitle{
+    font-size: 2.5em;
+}
 .mainContent{
-    width: 100%;
-    max-width: 1800px;
+    width: 90%;
+    max-width: 1000px;
     margin: 0 auto;
 }
-
 .column{
-    float: left;
-    width: calc(50% - 40px);
-    padding: 20px;
+    float: none;
+    margin: 0 auto;
+    width: 100%;
 }
-/*TEAMS PAGE*/
-#teams>li{
+.column p{
+    font-size: 1.2em;
+}        
+/*.content{
+    font-size: 1.2em;
+    width: 70%;
+    margin: 0 auto;
+}*/
+/*   TEAMS    */
+    
+.teamCarousel{
+    width: 100%;
+    margin: 0 auto;
+}
+.teamContain{
+    margin-top: 0;
+    min-width: 210px;
+    min-height: 220px;
+    width: 30%;
+    height: 30%;
+    max-width: 285px;
+    max-height: 300px;
+    background: none;
+    cursor: pointer;
+}   
+.teamOverlay{
+    display: block;
+    height: inherit;
+    width: inherit;
+    background: rgba(26, 106, 120, 0.7);
+}
+.teamMember{
+    display: block;
+    float: none;
+    min-width: 140px;
+    min-height: 140px;
+    width: 210px;
+    height: 210px;
+    margin: 12px auto;
+}
+.teamMemDesc{
+    display: block;
+    margin: 0 auto;
+    margin-top: -5px;
+    transform: none;
+    font-size: 1em;
+    line-height: 1.8em;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    overflow: hidden;
+}    
+.teamMemDesc h2{
+    margin: 0 auto;
+    padding: 0;
+    text-transform: uppercase;
+}
+.teamMemDesc a{
+    text-decoration: none;
+    color: #1A6A78;
+}
+.teamMemDesc p{
+    font-style: italic;
+    padding: 0;
+    margin: -5px 0;
+}
+    
+/* GALLERY */
+    
+#gallery{
+	width:80%;
+	margin:0 auto;
+}
+.gallery-item{
 	float:left;
-	list-style: none;
-	margin:0px 10px 0px 0px;
+	width:30%;
+	margin:0px 1.66% 20px 1.66%;
 }
-
-    /*GALLERY*/
-    #gallery{
-        width:80%;
-        margin:0 auto;
-    }
-
-    .gallery-item{
-        float:left;
-        width:30%;
-        margin:0px 1.66% 20px 1.66%;
-    }
-
-    .gallery-item>img{
-        width:100%;
-        margin: 0 auto;
-    }
-    /*END GALLERY*/
-/******END TEAMS PAGE******/
-	
-/******PARTNERS******/
-.partner_section {
-	width:40%;
-	height:100%;
-	float:left;
-	margin:0px 5% 0px 5%;
+.gallery-item>img{
+	width:100%;
+	margin: 0 auto;
 }
-
-.partner_section>img{
-	width:50%;
-	display:block;
-	margin:20px auto;
-}
-/******END PARTNERS******/
 }
