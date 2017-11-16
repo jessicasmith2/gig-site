@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<title>Providence Academy Journey Gig Site</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel ="icon" type="image/png" href=""> <!-- favicon -->
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <div class="menuContain">
+                <nav>
+                    <a href="index.html"><img src="img/placeholder.png" alt="Providence Academy Journey logo" class="logo left"></a>
+                    <!-- mobile menu -->
+                        <img class="menuIcon" src="img/MenuIcon4.png" alt="menu icon">
+                        <div id="mobileMenu">
+                            <img class="menuIcon" src="img/MenuIcon4.png" alt="menu icon">
+                            <a href="index.html">HOME</a><br>
+                            <a href="teams.html">TEAMS</a><br>
+                            <ul>
+                                <li><a href="contentteam.html">CONTENT</a></li>
+                                <li><a href="designteam.html">DESIGN</a></li>
+                                <li><a href="marketingteam.html">MARKETING</a></li>
+                                <li><a href="webteam.html">WEB</a></li>
+                            </ul>
+                            <a href="partners.html">PARTNERS</a><br>
+                        </div>
+				    <ul id="menu" class="right">
+                        <li class="left"><a href="index.html">Home</a></li>
+                        <li class="active sub left"><a href="teams.html" class="sub-active">Teams</a>
+                            <div class="subMenu">
+                                <a href="contentteam.html">Content</a>
+                                <a href="designteam.html">Design</a>
+                                <a href="marketingteam.html">Marketing</a>
+                                <a href="webteam.html">Web</a>
+                            </div>
+                        </li>
+                        <li class="left"><a href="partners.html">Partners</a></li>
+				    </ul>
+                </nav>
+            </div> <!-- end menuContain-->
+	   </header>
+	   <div class="mainContent">
+           <div class="column">
+              <h1 class="sectionTitle">Meet the Team</h1>
+                <h2>The Content Team</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ullamcorper ultricies lectus, ut mattis urna sodales in. Suspendisse malesuada mauris non nulla aliquam cursus. Suspendisse laoreet iaculis metus at varius. Aliquam ut lectus vel orci euismod sollicitudin. Mauris sit amet massa tortor. Vestibulum cursus non magna at faucibus. Vestibulum augue ligula, pretium vel hendrerit ut, venenatis eget dolor.</p>
+                <div class="teamCarousel">
+                    <div class="teamContain">
+                        <img class="teamMember" src="img/placeholder.png" alt="team member">
+                        <div class="teamMemDesc">
+                            <h2><a href="">John Doe</a></h2>
+                            <p>Role</p>
+                        </div>
+                    </div>
+                    <div class="teamContain">
+                            <img class="teamMember" src="img/placeholder.png" alt="team member">
+                        <div class="teamMemDesc">
+                            <h2><a href="">John Doe</a></h2>
+                            <p>Role</p>
+                        </div>
+                    </div>
+                    <div class="teamContain">
+                            <img class="teamMember" src="img/placeholder.png" alt="team member">
+                        <div class="teamMemDesc">
+                            <h2><a href="">John Doe</a></h2>
+                            <p>Role</p>
+                        </div>
+                    </div>
+                    <div class="teamContain">
+                            <img class="teamMember" src="img/placeholder.png" alt="team member">
+                        <div class="teamMemDesc">
+                            <h2><a href="">John Doe</a></h2>
+                            <p>Role</p>
+                        </div>
+                    </div>
+                    <div class="teamContain">
+                            <img class="teamMember" src="img/placeholder.png" alt="team member">
+                        <div class="teamMemDesc">
+                            <h2><a href="">John Doe</a></h2>
+                            <p>Role</p>
+                        </div>
+                    </div>
+                    <div class="teamContain">
+                            <img class="teamMember" src="img/placeholder.png" alt="team member">
+                        <div class="teamMemDesc">
+                            <h2><a href="">John Doe</a></h2>
+                            <p>Role</p>
+                        </div>
+                    </div>
+                    <div class="teamContain">
+                            <img class="teamMember" src="img/placeholder.png" alt="team member">
+                        <div class="teamMemDesc">
+                            <h2><a href="">John Doe</a></h2>
+                            <p>Role</p>
+                        </div>
+                    </div>
+                    <div class="teamContain">
+                            <img class="teamMember" src="img/placeholder.png" alt="team member">
+                        <div class="teamMemDesc">
+                            <h2><a href="">John Doe</a></h2>
+                            <p>Role</p>
+                        </div>
+                    </div>
+                </div>
+                <span class="clear"></span>
+            </div> <!-- close first column -->
+		<div class="column">
+            <h1 class="sectionTitle">Team Gallery</h1>
+            
+           </div>
+        <span class="clear"></span>
+	</div> <!-- end main content -->
+</div> <!-- end wrapper -->
+    <!-----jQuery----->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-----Custom Programming----->
+	<script src="script.js"></script>
+</body>
+</html>
